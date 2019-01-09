@@ -102,12 +102,12 @@ class DrillHit(object):
     def to_inch(self):
         if self.tool.settings.units == 'metric':
             self.tool.to_inch()
-            self.position = tuple(map(inch, self.position))
+        self.position = tuple(map(inch, self.position))
 
     def to_metric(self):
         if self.tool.settings.units == 'inch':
             self.tool.to_metric()
-            self.position = tuple(map(metric, self.position))
+        self.position = tuple(map(metric, self.position))
 
     @property
     def bounding_box(self):
