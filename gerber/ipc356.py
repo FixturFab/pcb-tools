@@ -43,7 +43,7 @@ def read(filename):
 
     Returns
     -------
-    file : :class:`gerber.ipc356.IPCNetlist`
+    file : :class:`gerbers.ipc356.IPCNetlist`
         An IPCNetlist object created from the specified file.
 
     """
@@ -64,7 +64,7 @@ def loads(data, filename=None):
 
     Returns
     -------
-    file : :class:`gerber.ipc356.IPCNetlist`
+    file : :class:`gerbers.ipc356.IPCNetlist`
         An IPCNetlist created from the specified file.
     """
     return IPCNetlistParser().parse_raw(data, filename)

@@ -20,10 +20,10 @@ This example renders the gerber files from the gerbv test suite
 """
 
 import os
-from gerber.rs274x import read as gerber_read
-from gerber.excellon import read as excellon_read
-from gerber.render import GerberCairoContext
-from gerber.utils import listdir
+from gerbers.rs274x import read as gerber_read
+from gerbers.excellon import read as excellon_read
+from gerbers.render import GerberCairoContext
+from gerbers.utils import listdir
 
 GERBER_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), 'gerbv_test_files'))
 

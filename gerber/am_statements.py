@@ -109,7 +109,7 @@ class AMCommentPrimitive(AMPrimitive):
 
     Returns
     -------
-    CommentPrimitive : :class:`gerber.am_statements.AMCommentPrimitive`
+    CommentPrimitive : :class:`gerbers.am_statements.AMCommentPrimitive`
         An Initialized AMCommentPrimitive
 
     Raises
@@ -173,7 +173,7 @@ class AMCirclePrimitive(AMPrimitive):
 
     Returns
     -------
-    CirclePrimitive : :class:`gerber.am_statements.AMCirclePrimitive`
+    CirclePrimitive : :class:`gerbers.am_statements.AMCirclePrimitive`
         An initialized AMCirclePrimitive
 
     Raises
@@ -253,7 +253,7 @@ class AMVectorLinePrimitive(AMPrimitive):
 
     Returns
     -------
-    LinePrimitive : :class:`gerber.am_statements.AMVectorLinePrimitive`
+    LinePrimitive : :class:`gerbers.am_statements.AMVectorLinePrimitive`
         An initialized AMVectorLinePrimitive
 
     Raises
@@ -485,7 +485,7 @@ class AMPolygonPrimitive(AMPrimitive):
 
     Returns
     -------
-    PolygonPrimitive : :class:`gerber.am_statements.AMPolygonPrimitive`
+    PolygonPrimitive : :class:`gerbers.am_statements.AMPolygonPrimitive`
         An initialized AMPolygonPrimitive
 
     Raises
@@ -591,7 +591,7 @@ class AMMoirePrimitive(AMPrimitive):
 
     Returns
     -------
-    MoirePrimitive : :class:`gerber.am_statements.AMMoirePrimitive`
+    MoirePrimitive : :class:`gerbers.am_statements.AMMoirePrimitive`
         An initialized AMMoirePrimitive
 
     Raises
@@ -697,7 +697,7 @@ class AMThermalPrimitive(AMPrimitive):
 
     Returns
     -------
-    ThermalPrimitive : :class:`gerber.am_statements.AMThermalPrimitive`
+    ThermalPrimitive : :class:`gerbers.am_statements.AMThermalPrimitive`
         An initialized AMThermalPrimitive
 
     Raises
@@ -861,7 +861,7 @@ class AMCenterLinePrimitive(AMPrimitive):
 
     Returns
     -------
-    CenterLinePrimitive : :class:`gerber.am_statements.AMCenterLinePrimitive`
+    CenterLinePrimitive : :class:`gerbers.am_statements.AMCenterLinePrimitive`
         An initialized AMCenterLinePrimitive
 
     Raises
@@ -976,7 +976,7 @@ class AMLowerLeftLinePrimitive(AMPrimitive):
 
     Returns
     -------
-    LowerLeftLinePrimitive : :class:`gerber.am_statements.AMLowerLeftLinePrimitive`
+    LowerLeftLinePrimitive : :class:`gerbers.am_statements.AMLowerLeftLinePrimitive`
         An initialized AMLowerLeftLinePrimitive
 
     Raises

@@ -49,7 +49,7 @@ def read(filename):
 
     Returns
     -------
-    file : :class:`gerber.excellon.ExcellonFile`
+    file : :class:`gerbers.excellon.ExcellonFile`
         An ExcellonFile created from the specified file.
 
     """
@@ -74,7 +74,7 @@ def loads(data, filename=None, settings=None, tools=None):
 
     Returns
     -------
-    file : :class:`gerber.excellon.ExcellonFile`
+    file : :class:`gerbers.excellon.ExcellonFile`
         An ExcellonFile created from the specified file.
 
     """

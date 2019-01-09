@@ -22,9 +22,9 @@
 
 import sys
 import math
-import gerber
+import gerbers
 from operator import sub
-from gerber.excellon import DrillHit
+from gerbers.excellon import DrillHit
 
 try:
     from tsp_solver.greedy import solve_tsp
@@ -46,7 +46,7 @@ if __name__ == '__main__':
         fname = sys.argv[1]
 
     # Read the excellon file
-    f = gerber.read(fname)
+    f = gerbers.read(fname)
 
     positions   = {}
     tools   = {}

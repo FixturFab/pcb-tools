@@ -45,7 +45,7 @@ def read(filename):
 
     Returns
     -------
-    file : :class:`gerber.rs274x.GerberFile`
+    file : :class:`gerbers.rs274x.GerberFile`
         A GerberFile created from the specified file.
     """
     return GerberParser().parse(filename)
@@ -64,7 +64,7 @@ def loads(data, filename=None):
 
     Returns
     -------
-    file : :class:`gerber.rs274x.GerberFile`
+    file : :class:`gerbers.rs274x.GerberFile`
         A GerberFile created from the specified file.
     """
     return GerberParser().parse_raw(data, filename)
