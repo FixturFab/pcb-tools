@@ -16,8 +16,8 @@
 # the License.
 
 if __name__ == '__main__':
-    from gerbers.common import read
-    from gerbers.render import GerberCairoContext
+    from rs274x.common import read
+    from rs274x.render import GerberCairoContext
     import sys
 
     if len(sys.argv) < 2:

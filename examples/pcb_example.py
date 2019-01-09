@@ -21,8 +21,8 @@ images using the PCB interface
 """
 
 import os
-from gerbers import PCB
-from gerbers.render import GerberCairoContext, theme
+from rs274x import PCB
+from rs274x.render import GerberCairoContext, theme
 
 
 GERBER_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), 'gerbers'))
