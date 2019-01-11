@@ -25,13 +25,13 @@ METADATA = {
     'version': 0.1,
     'author': 'Paulo Henrique Silva <ph.silva@gmail.com>, Hamilton Kibbe <ham@hamiltonkib.be>',
     'author_email': "ph.silva@gmail.com, ham@hamiltonkib.be",
-    'description': ("Utilities to handle Gerber (RS-274X) files."),
+    'description': "Utilities to handle Gerber (RS-274X) files.",
     'license': "Apache",
     'keywords': "pcb gerber tools",
     'url': "http://github.com/curtacircuitos/pcb-tools",
     'packages': ['gerber', 'gerber.render'],
-    'long_description': read('README.rst'),
-    'classifiers':[
+    'long_description': read('README.md'),
+    'classifiers': [
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
         "License :: OSI Approved :: Apple Public Source License",
@@ -56,6 +56,7 @@ def install():
         stderr.write('NOTE: You will need to install dependencies manualy')
         from distutils.core import setup
         setup(**METADATA)
+
 
 if __name__ == '__main__':
     install()
