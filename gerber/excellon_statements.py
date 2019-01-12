@@ -887,8 +887,7 @@ class SlotStmt(ExcellonStatement):
             y_coord = parse_gerber_value(line.strip(' Y'), settings.format,
                                          settings.zero_suppression)
 
-        return (x_coord, y_coord)
-
+        return x_coord, y_coord
 
     def __init__(self, x_start=None, y_start=None, x_end=None, y_end=None, **kwargs):
         super(SlotStmt, self).__init__(**kwargs)
@@ -968,6 +967,7 @@ class SlotStmt(ExcellonStatement):
 
         return '<Slot Statement: %s to %s>' % (start_str, end_str)
 
+
 def pairwise(iterator):
     """ Iterate over list taking two elements at a time.
 
@@ -975,4 +975,7 @@ def pairwise(iterator):
     """
     itr = iter(iterator)
     while True:
-        yield tuple([next(itr) for i in range(2)])
+        try:
+            yield tuple([next(itr) for i in range(2)])
+        except (RuntimeError, StopIteration):
+            return
