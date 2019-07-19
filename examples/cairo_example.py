@@ -24,8 +24,9 @@ a .png file.
 """
 
 import os
-from rs274x import load_layer
-from rs274x.render import GerberCairoContext, RenderSettings, theme
+from gerber import load_layer
+from gerber.render import RenderSettings, theme
+from gerber.render.cairo_backend import GerberCairoContext
 
 GERBER_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), 'gerbers'))
 
